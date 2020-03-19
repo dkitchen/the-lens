@@ -350,3 +350,4 @@ MigrationBackup/
 .ionide/
 TheLensApp/sshDeploy.json
 TheLensApp/sshDeploy.json
+TheLensApp/app.db
