@@ -148,7 +148,7 @@ namespace TheLensApp.Areas.Identity.Pages.Account.Manage
         {
             return string.Format(
                 AuthenticatorUriFormat,
-                _urlEncoder.Encode("TheLensApp"),
+                _urlEncoder.Encode("The Lens App"),
                 _urlEncoder.Encode(email),
                 unformattedKey);
         }
