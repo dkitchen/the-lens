@@ -1,2 +1,4 @@
 # the-lens
-Wellness community progress notes, document management, and communication tools. Discover, Create, and Love (in a HIPAA compliant manner)
+Wellness community progress notes, document management, and communication tools. Magnify and Shine! (in a HIPAA compliant manner)
+
+The LENS Secure Portal is written in Blazor, C#, and Sqlite. It was developed on a Mac and tested/deployed to Rasberry Pi running apache for use by The LENS. It's designed to be self-hostable on a very low cost in-house server. It may be useful for any organization that provided confidential wellness services such as counseling, classes, group therapy, and mindfulness retreats. The system should handle all your intake, progress notes, release of information documents, team-communication and scheduling needs. It was also designed to eliminate the need for any cloud-based dependencies or third-party services while being small and simple enough to run on the very cheapest hardware running free software.
