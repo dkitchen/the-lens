@@ -352,3 +352,5 @@ TheLensApp/sshDeploy.json
 TheLensApp/sshDeploy.json
 TheLensApp/app.db
 TheLensApp/app.db
+TheLensApp/.vscode/launch.json
+TheLensApp/.vscode/tasks.json
