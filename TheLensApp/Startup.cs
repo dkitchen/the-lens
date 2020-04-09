@@ -15,6 +15,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using TheLensApp.Areas.Identity;
 using TheLensApp.Data;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace TheLensApp
 {
@@ -34,8 +35,13 @@ namespace TheLensApp
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlite(
                     Configuration.GetConnectionString("DefaultConnection")));
+
             //services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
             //    .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            //setup email services
+            services.AddTransient<IEmailSender, EmailService>();
+            services.Configure<AuthMessageSenderOptions>(Configuration);
 
             services.AddRazorPages();
 
@@ -44,6 +50,7 @@ namespace TheLensApp
             //services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
 
             services.AddSingleton<WeatherForecastService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
